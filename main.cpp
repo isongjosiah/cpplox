@@ -22,9 +22,11 @@ int main(int argc, char *argv[]) {
       
       // do repl here
       std::cout << "command " << command << " not supported right now\n";
+
     }
     
   } else {
+
     char *filePath = argv[1];
     if (!std::filesystem::is_regular_file(std::filesystem::status(filePath))) {
       std::cout << "invalid path file path specified: " << filePath <<  "\n";
