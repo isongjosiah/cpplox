@@ -1,0 +1,3 @@
+/Users/konig/code/hacking/cpplox/CMakeFiles/cpplox.dir
+/Users/konig/code/hacking/cpplox/CMakeFiles/edit_cache.dir
+/Users/konig/code/hacking/cpplox/CMakeFiles/rebuild_cache.dir
