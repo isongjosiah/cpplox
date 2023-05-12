@@ -1,6 +1,9 @@
 #include "iostream"
+#include <chrono>
+#include <filesystem>
 #include <semaphore>
 #include <string>
+#include <thread>
 
 int main(int argc, char *argv[]) {
   // check input from command line
@@ -23,8 +26,13 @@ int main(int argc, char *argv[]) {
     
   } else {
     char *filePath = argv[1];
+    if (!std::filesystem::is_regular_file(std::filesystem::status(filePath))) {
+      std::cout << "invalid path file path specified: " << filePath <<  "\n";
+    }
     
     // handle source file mode
+    std::this_thread::sleep_for(std::chrono::seconds(5));
+    std::cout << "the scanner has handled your file\n";
   }
 
   std::cout << "Thank you for using cpplox!\n";
