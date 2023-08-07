@@ -4,6 +4,7 @@
 #include <semaphore>
 #include <string>
 #include <thread>
+#include "scanner/scanner.h"
 
 int main(int argc, char *argv[]) {
   // check input from command line
